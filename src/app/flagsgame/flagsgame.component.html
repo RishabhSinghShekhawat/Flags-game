@@ -1,0 +1,42 @@
+<h1>
+  FLAGS GAME!!
+  
+Please Enter  the country's name in LOWER CASE. 
+</h1>
+
+<div>
+  <div>
+  
+    
+<span class="flag-icon flag-icon-{{randomNationName}}">
+  </span>
+
+</div>
+ <!-- <img src="" alt=""> -->
+<button (click)="Next()">next</button>
+
+
+<input type="text" [(ngModel)]="name"><br>
+ <!-- <button >{{option1}}
+</button><br>
+<button >{{option2}}</button><br>
+<button >{{option3}}</button><br> 
+
+ <button >{{option4}}</button><br>  -->
+
+ <form>
+    <input type="radio" name="gender" value="male" checked> {{option1}}<br>
+    <input type="radio" name="gender" value="female"> {{option2}}<br>
+    <input type="radio" name="gender" value="other"> {{option3}}<br>
+    <input type="radio" name="gender" value="other">{{randomNationName}}<br>
+
+  </form> 
+  
+<h2 *ngIf="name && name==Names">
+
+  BINGO!!!
+</h2>
+
+
+ </div>
+ 
